@@ -33,7 +33,7 @@ public class ChuanHoaSach {
         StringBuilder title = new StringBuilder();
         StringBuilder name = new StringBuilder(names[0].toUpperCase() + ",");
         for(String s : titles) {
-            if(!title.isEmpty()) title.append(" ");
+            if(title.length() > 0) title.append(" ");
             String tmp = Character.toUpperCase(s.charAt(0)) + s.substring(1);
             title.append(tmp);
         }
